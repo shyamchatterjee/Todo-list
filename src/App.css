@@ -96,4 +96,36 @@ form{
   height: 25px;
   border: none;
 }
+.color-contener{
+  display: flex;
+  gap: 1rem;
+}
+.red{
+   background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.blue{
+  background-color: blue;
+   width: 10px;
+   height: 10px;
+   border-radius: 5%;
+   cursor: pointer;
+}
+.green{
+  background-color: green;
+   width: 10px;
+   height: 10px;
+   border-radius: 5%;
+   cursor: pointer;
+}
+.black{
+  background-color: black;
+   width: 10px;
+   height: 10px;
+   border-radius: 5%;
+   cursor: pointer;
+}
 
