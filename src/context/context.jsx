@@ -6,9 +6,19 @@ export   let Context = createContext(null)
     let [array,setArray] = useState([])
     let addDeta = (data)=>{
        setArray([...array,data])
+           
+        setObj({...Obj,name : "",date:""})
+      
     }
-
-    return   <Context.Provider value={{Obj,setObj,addDeta,array}}>
+   let removeItem = (data)=>{
+        let deleteItem =  array.filter((element)=>{
+                   if (element.name!==data.name) {
+                          return element
+                   }
+          }) 
+          setArray(deleteItem)
+   }
+    return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem}}>
            {children}
        </Context.Provider>
  }
