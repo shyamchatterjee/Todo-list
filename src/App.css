@@ -85,5 +85,15 @@ form{
    width: 100%;
    height: 30px;
    border: 1px solid black;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.remove-button{
+  background-color: red;
+  color: white;
+  width: 110px;
+  height: 25px;
+  border: none;
 }
 

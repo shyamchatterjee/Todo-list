@@ -1,8 +1,17 @@
-let Todocontener = ()=>{
-  return <div className="todo-contener">
-            <div className="todo">
+import { useContext } from "react"
+import { Context } from "../context/context"
 
-            </div>
+let Todocontener = ()=>{
+    let {array} = useContext(Context)
+  return <div className="todo-contener">
+        {array.map((element)=>{
+              return <div className="todo">
+                       <h3>{element.name}</h3>
+                       <h3>{element.date}</h3>
+                       <button className="remove-button">remove</button>
+              </div>
+        })}
+            
   </div>
 }
 export default Todocontener
