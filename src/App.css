@@ -18,5 +18,10 @@ body{
   width: 500px;
   height: 500px;
   border: 1px solid black;
+  padding: 1rem;
+}
+form{
+  width: 100%;
+  background-color: red;
 }
 
