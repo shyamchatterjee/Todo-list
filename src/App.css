@@ -1,2 +1,22 @@
 
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 1rem;
+}
+
+#root{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contener{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
 
