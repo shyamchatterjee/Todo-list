@@ -4,8 +4,7 @@ export   let Context = createContext(null)
  export let ContextFuntion = ({children})=>{
     let [Obj,setObj] = useState({})
     let [array,setArray] = useState([])
-    let [Color, setColor] = useState("");
-   
+
     let addDeta = (data)=>{
        setArray([...array,data])
            
@@ -20,7 +19,7 @@ export   let Context = createContext(null)
           }) 
           setArray(deleteItem)
    }
-    return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem,Color,setColor}}>
+    return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem}}>
            {children}
        </Context.Provider>
  }

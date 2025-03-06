@@ -1,7 +1,7 @@
-import { useContext } from "react"
+/*import { useContext } from "react"
 import { Context } from "../context/context"
 
-let Colorchange = ({setColor})=>{
+let Colorchange = ()=>{
      let {setColor} = useContext(Context)
   return <div className="color-contener">
          <div className="red" onClick={()=>{setColor("red")}}>
@@ -18,4 +18,4 @@ let Colorchange = ({setColor})=>{
          </div>
   </div>
 }
-export default Colorchange
+export default Colorchange*/
