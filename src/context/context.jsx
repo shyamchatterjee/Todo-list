@@ -41,6 +41,9 @@ export   let Context = createContext(null)
       setObj({...Obj,name:"",date:""})
       setboolen(false)
   }
+  let chekFuntion = ()=>{
+       console.log("Add")
+  }
     return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem,editFuntion,bollen,updateSubmit,Id}}>
           {children}
        </Context.Provider>

@@ -5,7 +5,7 @@ import { FaRegEdit } from "react-icons/fa";
 
 let Editbutton = ({element,id})=>{
     let {editFuntion} = useContext(Context)
-   return  <FaRegEdit  onClick={()=>{editFuntion(element,id)}} />
+   return  <FaRegEdit style={{cursor:"pointer"}}  onClick={()=>{editFuntion(element,id)}} />
 
            
 }

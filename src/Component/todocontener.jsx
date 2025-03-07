@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Context } from "../context/context";
 
 import Button from "./removecontener";
-import Colorchange from "./colorsComponent";
+import Colorchange from "./colorsTextComponent";
 import Editbutton from "./editbutton";
 
 let Todocontener = () => {
