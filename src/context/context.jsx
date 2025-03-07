@@ -7,7 +7,7 @@ export   let Context = createContext(null)
     let [Id,setId] = useState("")
      let [data,setdata] = useState([])
         let [bollen,setboolen] = useState(false)
-        let [boolen,setboolens] = useState(true)
+     //    let [boolen,setboolens] = useState(true)
         
     let addDeta = (data)=>{
        setArray([...array,data])
@@ -42,16 +42,14 @@ export   let Context = createContext(null)
       setObj({...Obj,name:"",date:""})
       setboolen(false)
   }
-  let chekFuntion = (element)=>{
+  let checkFuntion = (element)=>{
        setdata([...data,element])
-       setboolens(false)
+     //   setboolens(false)
 
   }
-  let otherwiseFuntion = ()=>{
-       setdata([])
-       setboolens(true)
-  }
-    return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem,editFuntion,bollen,updateSubmit,Id,chekFuntion,data,boolen,otherwiseFuntion}}>
+  
+ 
+    return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem,editFuntion,bollen,updateSubmit,Id,checkFuntion,data}}>
           {children}
        </Context.Provider>
  }

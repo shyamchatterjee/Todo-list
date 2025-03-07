@@ -3,11 +3,11 @@ import { Context } from "../context/context";
 
 let Colorchange = ({element,id}) => {
   let [Color,setColor] = useState("")
- let {chekFuntion,boolen,otherwiseFuntion} = useContext(Context)
+  let {checkFuntion} = useContext(Context)
 
   return (
     <>
-       <input type="checkbox" name="" id="chek-box" onClick={()=>{boolen==true?chekFuntion(element):otherwiseFuntion()}} />
+       <input type="checkbox" name="" id="chek-box" onChange={(e)=>{e.target.checked==true?checkFuntion(element):""} } />
       <h3 style={{ color: Color }}>{id + 1}</h3>
       <h3 style={{ color: Color }}>{element.name}</h3>
       <h3 style={{ color: Color }}>{element.date}</h3>
