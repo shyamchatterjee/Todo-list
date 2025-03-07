@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Context } from "../context/context";
 
-import Button from "./buttoncontener";
+import Button from "./removecontener";
 import Colorchange from "./colorsComponent";
 import Editbutton from "./editbutton";
 

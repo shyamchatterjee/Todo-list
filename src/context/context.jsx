@@ -42,6 +42,6 @@ export   let Context = createContext(null)
       setboolen(false)
   }
     return   <Context.Provider value={{Obj,setObj,addDeta,array,removeItem,editFuntion,bollen,updateSubmit,Id}}>
-           {children}
+          {children}
        </Context.Provider>
  }

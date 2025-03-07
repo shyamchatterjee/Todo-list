@@ -6,6 +6,7 @@ import Todocontener from './todocontener';
 
 function App() {
   return <div className='contener'>
+        <h2 style={{textAlign:"center",color:"white"}}>Todo list</h2>
              <Form/>
              <Todocontener/>
   </div>
