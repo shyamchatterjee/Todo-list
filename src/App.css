@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family:"Poppins", sans-serif; ;
 }
 
 
@@ -212,7 +213,7 @@
 
 
 }
-.add-item-contener{
+.add-item-container{
   width: 300px;
   padding: 1rem;
    display: flex;
@@ -223,6 +224,9 @@
    overflow-x: scroll;
    box-shadow:1px 0 1px 1px white ;
 }
-.add-item-contener::-webkit-scrollbar{
+.add-item-container::-webkit-scrollbar{
      display: none;
+}
+.hide{
+  display: none;
 }

@@ -7,7 +7,7 @@ import { Context } from '../context/context';
 
 function App() {
   let {data} = useContext(Context)
-  return <> <div className='add-item-contener'> {data.map((element)=>{
+  return <> <div className={data.length==0?"hide":"add-item-container"}> {data.map((element)=>{
          return <h3>{element.name}</h3>
   })} </div>
    <div className='contener'>
