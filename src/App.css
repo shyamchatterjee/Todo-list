@@ -7,9 +7,12 @@
 
   
   body {
+    background-image: url("https://images.pexels.com/photos/1175136/pexels-photo-1175136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    
+    /* background-color: blue; */
     padding: 1rem;
-    background-color: #c9c9c9;
-    background-color: black;
+    
   }
 #root {
   width: 100%;
@@ -25,11 +28,12 @@
 
 .contener{
   
-    /* background-color: #FFFFFF; */
+   
     border: none;
     border-radius: 1rem;
-    background-color: black;
+    background: transparent ;
    box-shadow:1px 0 1px 1px white ;
+   backdrop-filter: blur(20px);
   
   
 
@@ -38,8 +42,8 @@
 @media (max-width: 1400px) {
   .contener {
     width: 600px;
-    height: 450px;
-    background-color: black;
+    /* height: 450px; */
+   
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -50,8 +54,8 @@
   
   .contener {
     width: 350px;
-    height: 400px;
-    background-color: black;
+    /* height: 400px; */
+    
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -68,6 +72,7 @@
     height: 30px;
     cursor: pointer;
     border: 1px solid white;
+    padding: 2px;
   }
 }
 .form {
@@ -107,15 +112,9 @@
   background-color: rgb(78, 188, 78);
   border: none;
   cursor: pointer;
+  border-radius: 1rem;
 }
-.edit-button {
-  width: 120px;
-  height: 25px;
-  color: white;
-  background-color: rgb(78, 188, 78);
-  border: none;
-  cursor: pointer;
-}
+
 .todo-contener {
   width: 100%;
   display: flex;
@@ -138,13 +137,7 @@
   color: white;
   border-radius: 2px;
 }
-.remove-button {
-  background-color: red;
-  color: white;
-  width: 110px;
-  height: 25px;
-  border: none;
-}
+
 .color-contener {
   display: flex;
   gap: 1rem;
@@ -164,16 +157,8 @@
     align-items: center;
     box-sizing: border-box;
   }
-  .edit-button{
-   width: 50px ;
-   height: 20px;
-  }
-  .remove-button {
-    
-    width: 50px;
-    height: 20px;
   
-  }
+ 
 }
 
 
@@ -198,13 +183,14 @@
   border-radius: 5%;
   cursor: pointer;
 }
-.black {
-  background-color: black;
+.white {
+  background-color: white;
   width: 10px;
   height: 10px;
   border-radius: 5%;
   cursor: pointer;
 }
+
 #chek-box{
   
   width: 20px;
@@ -219,8 +205,9 @@
    display: flex;
    align-items: center;
    gap: 1rem;
-   color: green;
-   background-color: black;
+   color: rgb(78, 188, 78) ;
+   background:transparent;
+    backdrop-filter: blur(20px);
    overflow-x: scroll;
    box-shadow:1px 0 1px 1px white ;
 }

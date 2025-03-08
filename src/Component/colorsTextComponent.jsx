@@ -31,9 +31,9 @@ let Colorchange = ({element,id}) => {
           }}
         ></div>
         <div
-          className="black"
+          className="white"
           onClick={() => {
-            setColor("black");
+            setColor("white");
           }}
         ></div>
       </div>
